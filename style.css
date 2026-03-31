@@ -7,6 +7,7 @@ body{
 }
 
 #content{
+    flex:1;
       display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
@@ -14,10 +15,15 @@ body{
 }
 
 .weather-card{
-height: 10vh;
+    padding: 1em;
+    color: white;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     gap: 1em;
+    /* background: border-box; */
+    background-color: black;
+
 }
 
 .weather-label{
@@ -29,4 +35,15 @@ footer{
     text-align: center;
     background: black;
     color: white;
+}
+
+header{
+        color: white;
+    padding: 2em;
+    background-color: black;
+}
+
+nav{
+        display: flex;
+    justify-content: space-between;
 }
