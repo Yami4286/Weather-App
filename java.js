@@ -35,11 +35,21 @@ class WeatherApp {
   ];
 
   display.forEach(item => {
-    const div = document.createElement("div");
-    if (item.id) div.id = item.id;
-    div.className = "Weather-card";
-    div.textContent = `${item.label}: ${item.value}`;
-    this.content.appendChild(div);
+    const card = document.createElement("div")
+  if (item.id) card.id = item.id
+  card.className = "weather-card"
+
+  const label = document.createElement("div")
+  label.className = "weather-label"
+  label.textContent = item.label
+
+  const value = document.createElement("div")
+  value.className = "weather-value"
+  value.textContent = item.value
+
+  card.appendChild(label)
+  card.appendChild(value)
+  this.content.appendChild(card)
   })
   }
 

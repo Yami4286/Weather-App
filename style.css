@@ -1,0 +1,32 @@
+
+body{
+        margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#content{
+      display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.weather-card{
+height: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.weather-label{
+    flex:1;
+}
+
+footer{
+        padding: 1em;
+    text-align: center;
+    background: black;
+    color: white;
+}
